@@ -1,0 +1,39 @@
+/* ==========================================================================
+   COMPONENT: MINIMAL SEARCH BAR (Thanh tìm kiếm phòng)
+   ========================================================================== */
+
+.minimal-search-bar {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f5f9;
+}
+
+.minimal-search-bar label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.minimal-search-bar .form-control,
+.minimal-search-bar .form-select {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    background-color: #f8fafc;
+    font-weight: 500;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.minimal-search-bar .form-control:focus,
+.minimal-search-bar .form-select:focus {
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}

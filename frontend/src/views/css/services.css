@@ -1,0 +1,125 @@
+/* ==========================================================================
+   PAGE COMPONENT: SERVICES
+   ========================================================================== */
+
+/* --- 1. KHU VỰC CHÍNH (Main Section) --- */
+.luxury-service-section {
+    padding: 80px 0 100px 0;
+    overflow: hidden;
+    background-color: var(--bg-light);
+}
+
+.service-item {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+/* --- 2. KHU VỰC HÌNH ẢNH --- */
+.service-img-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.service-item:hover .service-img {
+    transform: scale(1.05);
+}
+
+/* --- 3. KHU VỰC NỘI DUNG --- */
+.service-content-box {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.service-pre-title {
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-pre-title::before {
+    content: '';
+    width: 40px;
+    height: 0.1rem;
+    background-color: var(--primary-color);
+}
+
+.service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.service-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    font-weight: 350;
+}
+
+/* --- 4. CÁC MỤC THÔNG TIN NHỎ --- */
+.info-item {
+    align-items: flex-start;
+}
+
+.info-item i {
+    color: var(--primary-color);
+    margin-top: 3px;
+}
+
+.info-item h6 {
+    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.info-item p {
+    color: var(--text-muted);
+}
+
+/* --- 5. RESPONSIVE (Cho điện thoại) --- */
+@media (max-width: 991px) {
+
+    /* Trên màn hình nhỏ, thẻ nội dung sẽ tự động đẩy lùi lên đè vào ảnh (-80px) */
+    .service-content-box {
+        margin-top: -80px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 30px;
+    }
+
+    .service-img {
+        height: 400px;
+        /* Giảm chiều cao ảnh trên di động để vừa vặn hơn */
+    }
+}

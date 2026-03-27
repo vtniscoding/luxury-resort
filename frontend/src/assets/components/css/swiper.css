@@ -1,0 +1,15 @@
+/* Dấu chấm chuyển slide */
+.homeRoomSwiper .swiper-pagination-bullet {
+    background: #adb5bd;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    width: 10px;
+    height: 10px;
+}
+
+/* Dấu chấm chuyển slide đang kích hoạt */
+.homeRoomSwiper .swiper-pagination-bullet-active {
+    background: var(--primary-color);
+    opacity: 1;
+    transform: scale(1.3);
+}

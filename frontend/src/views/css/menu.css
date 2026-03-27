@@ -1,0 +1,70 @@
+/* Tùy chỉnh riêng cho giao diện trang Dịch vụ */
+.service-img-wrapper {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-img-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.service-img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Tùy chỉnh Layout Menu Thực Đơn (Dotted Leader) */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.2rem;
+}
+
+.menu-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.menu-dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #cfd2d6;
+    margin: 0 12px;
+    position: relative;
+    top: -6px;
+}
+
+.menu-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.menu-desc {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.menu-category-title {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}

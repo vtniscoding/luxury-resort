@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+    /* Màu thương hiệu */
+    --primary-color: #d4af37;
+    --primary-hover: #b5952f;
+    --secondary-color: #1a252f;
+    --bg-light: #efefef;
+
+    /* Màu chữ chính */
+    --text-main: #333333;
+    /* Màu chữ phụ */
+    --text-muted: #6c757d;
+
+    /* Bo góc vừa (medium) */
+    --radius-md: 8px;
+    /* Bo góc lớn (large) */
+    --radius-lg: 16px;
+    /* Đổ bóng nhẹ (small) */
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. MẶC ĐỊNH: */
+body,
+html {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+/* 2. KIỂU CHỮ: */
+/* Chữ tiêu đề kiểu 1: */
+.luxury-title-1 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.luxury-title-1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1.5px;
+    background-color: var(--primary-color);
+}
+
+/* Chữ tiêu đề kiểu 2: */
+.luxury-title-2 {
+    font-family: "Crimson Pro", serif;
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* 3. NÚT BẤM: */
+/* Nút bấm tiêu chuẩn: */
+.btn-custom {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 50rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Nút bấm màu thương hiệu: */
+.btn-primary-theme {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary-theme:hover {
+    background-color: var(--primary-hover);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Nút bấm viền thương hiệu: */
+.btn-outline-theme {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.btn-outline-theme:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Nút bấm phụ: */
+.btn-secondary-theme {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.btn-secondary-theme:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. FORM: */
+/* Form nhập liệu */
+.form-input-theme {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    outline: none;
+    background: white;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.form-input-theme:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+/* 5. NHÃN TRẠNG THÁI & ICON */
+/* Các nhãn chứa icon dịch vụ */
+.badge-amenity {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #495057;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Các nhãn trạng thái phòng */
+.badge-theme {
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.badge-available {
+    background-color: var(--bg-light);
+    color: var(--primary-hover);
+}
+
+.badge-booked {
+    background-color: var(--bg-light);
+    color: #ef4444;
+}
+
+/* Tiện ích gắn badge lơ lửng trên ảnh */
+.badge-floating {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 6. THẺ THÔNG TIN */
+/* Thẻ chứa thông tin phòng (lớn) */
+.featured-room-card {
+    background: white;
+}
+
+/* Vùng chứa ảnh đại diện phòng (lớn) */
+.featured-carousel-img {
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ----- Lưới Thẻ Phòng (Dạng Dọc - Trang Chủ/Danh sách) ----- */
+.room-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 16px !important;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.room-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.room-card-body {
+    padding: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.room-card-body .room-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    font-family: "Crimson Pro", serif;
+}
+
+.room-card-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 15px;
+}
+
+.room-card-meta i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.room-card:hover .room-card-img {
+    transform: scale(1.08);
+}
+
+/* ----- Thẻ Đặt Phòng (Dạng Ngang - Trang Booking) ----- */
+.booking-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.booking-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.booking-card-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.booking-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.booking-card:hover .booking-card-img {
+    transform: scale(1.05);
+}
+
+.booking-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.booking-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: "Crimson Pro", serif;
+    margin-bottom: 0.5rem;
+}
+
+.booking-price-wrap {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: right;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+
+    /* Mở rộng thẻ booking sang dạng ngang trên Desktop */
+    .booking-card {
+        flex-direction: row;
+    }
+
+    .booking-card-img-wrap {
+        width: 35%;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .booking-card-body {
+        width: 65%;
+        padding: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .room-card-img-wrapper {
+        height: 220px;
+    }
+
+    .booking-price-wrap {
+        margin-top: 15px;
+        text-align: left;
+    }
+}

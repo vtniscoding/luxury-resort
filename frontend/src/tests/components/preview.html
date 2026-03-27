@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Kit</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./preview.css">
+</head>
+
+<body>
+
+    <header class="preview-header">
+    </header>
+
+    <main class="container pb-5">
+
+        <!-- 1. BẢNG MÀU -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">1. Bảng Màu (Color Palette)</h4>
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <div class="color-box" style="background-color: var(--primary-color);"></div>
+                    <span class="code-label">--primary-color</span>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="color-box" style="background-color: var(--primary-hover);"></div> <span
+                        class="code-label">--primary-hover</span>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="color-box" style="background-color: var(--secondary-color);"></div>
+                    <span class="code-label">--secondary-color</span>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="color-box" style="background-color: var(--bg-light); border: 1px solid #ddd;"></div>
+                    <span class="code-label">--bg-light</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TYPOGRAPHY -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">2. Kiểu Chữ (Typography)</h4>
+            <div class="row text-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 border-end">
+                    <h2 class="luxury-title-1">Tiêu Đề Kiểu 1</h2>
+                    <span class="code-label">class="luxury-title-1"</span>
+                </div>
+                <div class="col-lg-6 ps-lg-4">
+                    <h2 class="luxury-title-2">Tiêu Đề Kiểu 2</h2>
+                    <span class="code-label">class="luxury-title-2"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. THẺ PHÒNG DỌC -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">2. Thẻ Thông Tin (Dạng Dọc - Grid)</h4>
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card room-card">
+                        <div class="room-card-img-wrapper">
+                            <span class="badge-theme badge-available badge-floating"><i
+                                    class="bi bi-star-fill me-1"></i> Bán Chạy</span>
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" class="room-card-img">
+                        </div>
+                        <div class="room-card-body">
+                            <h4 class="room-title">Phòng Suite Hướng Biển</h4>
+                            <div class="room-card-meta">
+                                <span><i class="bi bi-arrows-fullscreen"></i> 65m²</span>
+                                <span><i class="bi bi-people"></i> 4 Khách</span>
+                            </div>
+                            <p class="text-muted small">Không gian nghỉ dưỡng tuyệt vời với nội thất
+                                cao cấp và tầm nhìn ôm trọn đại dương xanh thẳm.</p>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                <div>
+                                    <span class="small text-muted d-block" style="font-size: 0.75rem;">Mỗi đêm từ</span>
+                                    <span class="fw-bold fs-5" style="color: var(--secondary-color);">3.500.000đ</span>
+                                </div>
+                                <a href="#" class="btn-secondary-theme">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. THẺ BOOKING NGANG -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">3. Thẻ Đặt Phòng (Dạng Ngang - List)</h4>
+            <div class="row">
+                
+                <div class="col-12">
+                    <div class="booking-card mb-4">
+                        <div class="booking-card-img-wrap">
+                            <span class="badge-theme badge-available badge-floating"><i
+                                    class="bi bi-check-circle-fill me-1"></i> Còn 2 phòng</span>
+                            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+                                class="booking-card-img" alt="Suite">
+                        </div>
+                        <div class="booking-card-body">
+                            <div class="pe-md-4 flex-grow-1">
+                                <h3 class="booking-card-title">Phòng Family Suite Hạng Sang</h3>
+                                <div class="room-card-meta mt-2 mb-3">
+                                    <span><i class="bi bi-arrows-fullscreen"></i> 90m²</span>
+                                    <span><i class="bi bi-people"></i> Tối đa 4 người lớn & 2 trẻ em</span>
+                                </div>
+                                <p class="text-muted small mb-3">Sự lựa chọn hoàn hảo cho kỳ nghỉ gia đình. Bao gồm 2
+                                    phòng ngủ thông nhau, phòng khách riêng và khu vực bếp tiện nghi.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge-amenity py-1"><i class="bi bi-tv text-primary me-1"></i> Smart
+                                        TV</span>
+                                    <span class="badge-amenity py-1"><i class="bi bi-cup-hot text-danger me-1"></i> Bữa
+                                        sáng</span>
+                                    <span class="badge-amenity py-1"><i class="bi bi-water text-info me-1"></i> Bồn
+                                        tắm</span>
+                                </div>
+                            </div>
+
+                            <div class="booking-price-wrap">
+                                <span class="small text-muted text-decoration-line-through">8.000.000đ</span>
+                                <span class="fw-bold fs-3 mb-1" style="color: var(--primary-color);">7.200.000đ</span>
+                                <span class="small text-muted mb-3 d-block">/ đêm (Bao gồm thuế phí)</span>
+                                <a href="#" class="btn-custom btn-primary-theme w-100 py-2">Chọn Phòng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thẻ Booking Hết Phòng -->
+                    <div class="booking-card opacity-75">
+                        <div class="booking-card-img-wrap">
+                            <span class="badge-theme badge-booked badge-floating"><i
+                                    class="bi bi-x-circle-fill me-1"></i> Kín Phòng</span>
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                                class="booking-card-img" alt="Standard" style="filter: grayscale(80%);">
+                        </div>
+                        <div class="booking-card-body">
+                            <div class="pe-md-4 flex-grow-1">
+                                <h3 class="booking-card-title text-muted">Phòng Standard Hướng Phố</h3>
+                                <div class="room-card-meta mt-2 mb-3">
+                                    <span><i class="bi bi-arrows-fullscreen"></i> 30m²</span>
+                                    <span><i class="bi bi-people"></i> 2 Khách</span>
+                                </div>
+                                <p class="text-muted small">Phòng nghỉ tiêu chuẩn với đầy đủ tiện ích hiện đại.</p>
+                            </div>
+                            <div class="booking-price-wrap bg-light">
+                                <span class="fw-bold fs-4 mb-2 text-muted">1.500.000đ</span>
+                                <button class="btn btn-secondary rounded-pill w-100 py-2" disabled>Hết Phòng</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. NHÃN -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">1. Nhãn Trạng Thái & Tiện Ích (Badges)</h4>
+            <div class="row">
+                <div class="col-md-6 border-end mb-4 mb-md-0">
+                    <h6 class="text-muted mb-3 text-uppercase small fw-bold">Nhãn trạng thái phòng</h6>
+                    <!-- Badge Mới -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge-theme badge-available"><i class="bi bi-check-circle-fill me-2"></i> Còn
+                            Phòng</span>
+                        <span class="badge-theme badge-booked"><i class="bi bi-x-circle-fill me-2"></i> Đã Đặt
+                            Hết</span>
+                    </div>
+                    <span class="code-label mt-3">class="badge-theme badge-available"</span>
+                </div>
+                <div class="col-md-6 ps-lg-4">
+                    <h6 class="text-muted mb-3 text-uppercase small fw-bold">Nhãn tiện ích (Amenity)</h6>
+                    <span class="badge-amenity"><i class="bi bi-wifi text-success me-2 fs-6"></i> Wifi Miễn Phí</span>
+                    <span class="badge-amenity"><i class="bi bi-tv text-primary me-2 fs-6"></i> Smart TV 55"</span>
+                    <span class="code-label mt-3">class="badge-amenity"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NÚT BẤM -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">5. Nút Bấm (Buttons)</h4>
+            <div class="row text-center g-4 align-items-center">
+                <div class="col-md-4">
+                    <a href="#" class="btn-custom btn-primary-theme mb-2">Nút Màu Chủ Đạo</a>
+                    <span class="code-label d-block">class="btn-custom btn-primary-theme"</span>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn-custom btn-outline-theme mb-2">Nút Viền Chủ Đạo</a>
+                    <span class="code-label d-block">class="btn-custom btn-outline-theme"</span>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn-secondary-theme mb-2">Chi tiết</a>
+                    <span class="code-label d-block">class="btn-secondary-theme"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FORM -->
+        <section class="preview-section">
+            <h4 class="preview-section-title">6. Biểu Mẫu (Forms)</h4>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-muted small">Email của bạn</label>
+                        <input type="email" class="form-input-theme" placeholder="Nhập địa chỉ email...">
+                        <span class="code-label">class="form-input-theme"</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

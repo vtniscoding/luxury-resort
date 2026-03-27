@@ -1,0 +1,13 @@
+# Ignore the admin and backend directories
+# admin/
+# backend/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore test files
+# tests/
+

@@ -1,0 +1,33 @@
+      body { background-color: #f8f9fa; }
+        .account-wrapper { margin-top: 100px; margin-bottom: 80px; }
+        
+        /* ĐIỀU CHỈNH MENU DỌC (SIDEBAR MENU) - LUÔN HIỆN NÚT RÕ RÀNG */
+        .sidebar-menu .nav-link {
+            background-color: #ffffff !important; /* Luôn hiển thị nền trắng để giống nút */
+ 
+            color: #4b5563 !important; /* Bắt buộc hiển thị màu chữ xám đậm */
+            font-weight: 600 !important; 
+            padding: 15px 20px !important; 
+            margin-bottom: 8px !important; 
+            transition: all 0.3s ease;
+            width: 100% !important;
+            text-align: left !important; /* Đảm bảo chữ canh trái không bị lệch */
+        }
+        
+        /* Hover: Chuyển sang màu xám nhạt */
+        .sidebar-menu .nav-link:hover { 
+            background-color: #e9ecef !important; 
+            color: var(--secondary-color) !important; 
+            border-color: #d1d5db !important;
+        }
+        
+        /* Active: Màu thương hiệu (Vàng Gold) */
+        .sidebar-menu .nav-link.active {
+            background-color: var(--primary-color) !important; 
+            border-color: var(--primary-color) !important;
+            color: #fff !important; 
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3) !important;
+        }
+
+        .card-custom { border: none; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .form-control:focus { border-color: var(--primary-color); box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.15); }
